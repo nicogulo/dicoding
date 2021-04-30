@@ -23,7 +23,7 @@ a {
 
 /* navbar */
 .img-logo {
-  width: 20%;
+  width: 15%;
 }
 .topnav {
   overflow: hidden;
@@ -38,7 +38,7 @@ a {
   display: block;
   color: #000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -57,4 +57,44 @@ a {
 
 .topnav-right {
   float: right;
+  padding-right: 30px;
+}
+
+/*  */
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+} */
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
 }
