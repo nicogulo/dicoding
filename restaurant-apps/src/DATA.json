@@ -3,7 +3,7 @@
     {
       "id": "6c7bqjgi84kcowlqdz",
       "name": "Bring Your Phone Cafe",
-      "description": "The city of Oldwood was built in the middle of a scorching desert and is truly an ancient marvel. Its charm is matched by the backdrop of clear blue skies which have helped shape the city to what it is today. The climate these skies brought were of great importance, but they were also influential when it came to architectural designs as the vast majority of buildings were designed to take full advantage of the climate through large windows and lush gardens.",
+      "description": "The city of Oldwood was built in the middle of a scorching desert and is truly an ancient marvel. Its charm is matched by the backdrop of clear blue skies which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41",
       "city": "Medan",
       "rating": 4.6
@@ -67,7 +67,7 @@
     {
       "id": "wf5o19xhxxkcowlqdz",
       "name": "Fairy Cafe",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04",
       "city": "Malang",
       "rating": 3.9

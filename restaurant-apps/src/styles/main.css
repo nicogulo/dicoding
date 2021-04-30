@@ -15,13 +15,9 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #424242;
-}
+
 a {
   cursor: pointer;
 }
@@ -33,39 +29,83 @@ a {
 .img-logo {
   width: 15%;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #fff;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+nav {
+  padding: 0 15px;
 }
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 30px 16px;
+a {
+  color: var(--font-title);
   text-decoration: none;
-  font-size: 17px;
+}
+.menu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+.item {
+  padding: 10px;
 }
 
-.topnav a:hover {
-  color: black;
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
 }
 
-.topnav a.active {
-  color: var(--primary-bg);
+.toggle {
+  order: 1;
+  font-size: 20px;
 }
 
-.topnav .icon {
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
   display: none;
 }
+.active .item {
+  display: block;
+}
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
 
-.topnav-right {
-  float: right;
-  padding-right: 30px;
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+}
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
 }
 
 /*  */
@@ -88,6 +128,7 @@ a {
 
 .hero__title {
   color: #fff;
+  font-family: Poppins;
   font-weight: 500;
   font-size: 36px;
 }
@@ -95,6 +136,7 @@ a {
 .hero__tagline {
   color: #fff;
   margin-top: 16px;
+  font-family: Poppins;
   font-size: 18px;
   font-weight: 300;
 }
@@ -118,6 +160,7 @@ main {
   text-align: center;
 }
 .restaurants-label {
+  font-family: "Poppins";
   font-size: 32px;
   font-weight: lighter;
 }
@@ -158,12 +201,14 @@ main {
 }
 
 .post-item__city {
-  font-size: 10px;
+  font-family: "Poppins";
+
   text-transform: uppercase;
-  color: #999;
+  color: var(--font-title);
 }
 
 .post-item__title {
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
   margin-top: 16px;
