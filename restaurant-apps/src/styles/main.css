@@ -20,9 +20,9 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-/* .container {
+.container {
   padding: 0 30px;
-} */
+}
 
 /* navbar */
 .img-logo {
@@ -81,7 +81,7 @@ a {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: url("../public/images/heros/hero.jpg");
+  background-image: url("../public/images/heros/hero3.jpg");
   background-position: center;
   background-color: green;
 }
