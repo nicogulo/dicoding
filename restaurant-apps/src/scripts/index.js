@@ -3,6 +3,7 @@ import "./component/drawer";
 import "../styles/main.css";
 import "../styles/responsive.css";
 import data from "../DATA.json";
+import { myFunction } from "./component/drawer";
 
 // const data = require("../DATA.json");
 let restoData = "";

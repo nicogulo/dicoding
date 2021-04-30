@@ -7,4 +7,5 @@ function myFunction() {
   }
 }
 
+window.myFunction = myFunction;
 export { myFunction };
