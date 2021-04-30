@@ -10,14 +10,16 @@ import myFunction from "./component/drawer.js";
 let restoData = "";
 data.restaurants.forEach((restaurants) => {
   restoData += `
-    <div class="card">
-      <div class="card-img">
-        <img src="${restaurants.pictureId}" alt="">
+    <div class="posts">
+    <article class="post-item">
+      
+        <img class="post-item__thumbnail" src="${restaurants.pictureId}" alt="Gambar Restorant">
+      
+      <div class="post-item__content">
+        <div class="post-item__title">${restaurants.name}</div>
+        <div class="post-item__description">${restaurants.description}</div>
       </div>
-      <div class="card-content">
-        <div class="card-title">${restaurants.name}</div>
-        <div class="card-description">${restaurants.description}</div>
-      </div>
+      </article>
     </div>
   `;
 });
