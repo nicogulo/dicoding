@@ -2,7 +2,7 @@
   "restaurants": [
     {
       "id": "6c7bqjgi84kcowlqdz",
-      "name": "Bring Your Phone Cafe",
+      "name": "Wide Awake Cafe",
       "description": "The city of Oldwood was built in the middle of a scorching desert and is truly an ancient marvel. Its charm is matched by the backdrop of clear blue skies which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41",
       "city": "Medan",
@@ -10,7 +10,7 @@
     },
     {
       "id": "ljx8i0qu2uckcowlqdz",
-      "name": "Run The Gun",
+      "name": "Grinders Bistro",
       "description": "It's this multicultural identity that has truly left its mark. Hundreds of cafés, food carts and bars offer a plethora of culinary choices and those who feel hungry for something else can enjoy aerobics, musea, adventure sports or one of the many other recreational venues.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07",
       "city": "Bali",
@@ -18,7 +18,7 @@
     },
     {
       "id": "fe8bbxoazddkcowlqdz",
-      "name": "Pangsit Express",
+      "name": "Regular Magnolia Cafe",
       "description": "The city of Whiteburn was built at the edge of a lush forest and is truly a contemporary sight. Its wonder is matched by the backdrop of gentle hills which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29",
       "city": "Ternate",
@@ -26,7 +26,7 @@
     },
     {
       "id": "ik1zljmlf68kcowlqdz",
-      "name": "Ducky Duck",
+      "name": "Splitting Beans Diner",
       "description": "The riches these hills brought were of great importance, but they were also influential when it came to architectural designs as the vast majority of buildings have been built with many round shapes and wide sizes, similar to the fields around them.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/38",
       "city": "Malang",
@@ -34,7 +34,7 @@
     },
     {
       "id": "9jpuzkm6n6jkcowlqdz",
-      "name": "Kafein",
+      "name": "Cool Beans Cafe",
       "description": "The city of Oxglen was built at the border of a traitorous jungle and is truly a contemporary phenomenon. Its wonder is matched by the backdrop of a majestic mountain which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40",
       "city": "Bali",
@@ -42,7 +42,7 @@
     },
     {
       "id": "cpl5jpsnuqkkcowlqdz",
-      "name": "Makan mudah",
+      "name": "Hard Hat Cafe",
       "description": "The city of Madhollow was built atop quiet and serene hills and is truly a true modern metropolis. Its grace is matched by the backdrop of lush forests which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08",
       "city": "Malang",
@@ -50,7 +50,7 @@
     },
     {
       "id": "iqtf9hmdzvbkcowlqdz",
-      "name": "Saya Suka",
+      "name": "Big Mugs Coffee",
       "description": "The city of Ironford was built among the towering trees of a huge forest and is truly an architectural phenomenon. Its wonder is matched by the backdrop of monumental waterfalls which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32",
       "city": "Surabaya",
@@ -58,7 +58,7 @@
     },
     {
       "id": "8i06gqcc2dpkcowlqdz",
-      "name": "Gigitan Cepat",
+      "name": "Swift Enigma Tearoom",
       "description": "The city of Freyport was built amidst the sands of a mighty desert and is truly a true modern metropolis. Its elegance is matched by the backdrop of clear blue skies which have helped shape the city to what it is today.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45",
       "city": "Aceh",
