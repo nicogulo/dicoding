@@ -10,11 +10,17 @@
   .logo {
     flex: 1;
   }
+  .img-logo {
+    width: 15%;
+  }
 
   .toggle {
     flex: 1;
     text-align: right;
     order: 2;
+
+    padding: 15px;
+    font-size: 16px;
   }
   .post-item__content {
     padding: 16px 32px 32px 32px;

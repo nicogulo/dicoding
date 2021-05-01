@@ -14,11 +14,16 @@ data.restaurants.forEach((restaurants) => {
       <img class="post-item__thumbnail" src="${restaurants.pictureId}" alt="Gambar Restorant">
         <div class="post-item__content">
           <p class="post-item__city">
-          <i class="fas fa-city"></i> ${restaurants.city}
+            <a href="#"><i class="fas fa-city"></i> ${restaurants.city}</a>
+          </p>    
+          <p class="post-item__rating">
+            <a href="#"><i class="fas fa-star">
+              </i> Rating ${restaurants.rating}
+            </a>
+          </p>   
+          <p class="post-item__title">
+            <a href="#">${restaurants.name}</a>
           </p>
-          <p class="post-item__rating" ><i class="fas fa-star"></i> Rating ${restaurants.rating} </p>
-            <p class="post-item__title">${restaurants.name}</p>
-          
           <div class="post-item__description"> ${restaurants.description}</div>
         </div>
     </article>

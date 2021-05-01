@@ -24,10 +24,21 @@ html {
 .container {
   padding: 0 30px;
 }
-
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
 /* navbar */
 .img-logo {
-  width: 15%;
+  width: 20%;
 }
 nav {
   padding: 0 15px;
@@ -35,6 +46,7 @@ nav {
 a {
   color: var(--font-title);
   text-decoration: none;
+  font-size: 16px;
 }
 .menu {
   list-style-type: none;
@@ -43,8 +55,8 @@ a {
   padding: 7.5px 10px 7.5px 0;
 }
 .item {
-  padding: 10px;
-  font-size: 14px;
+  padding: 15px;
+  font-size: 16px;
 }
 
 /* Mobile menu */
@@ -55,21 +67,24 @@ a {
   align-items: center;
 }
 .menu li a {
+  -webkit-flow-into: 20px;
   display: block;
-  padding: 15px 5px;
+  padding: 18px 15px;
+  font-size: 24px;
 }
 
 .toggle {
   order: 1;
-  font-size: 20px;
 }
 
 .item {
+  padding: 20px;
   order: 3;
   width: 100%;
   text-align: center;
   display: none;
 }
+
 .active .item {
   display: block;
 }
@@ -268,13 +283,18 @@ main {
 }
 
 .post-item__city {
+  margin: 10px 0;
+}
+
+.post-item__city a {
+  padding: 16px 0;
   font-family: "Poppins";
   font-size: 14px;
   text-transform: uppercase;
   color: var(--font-title);
-  padding-bottom: 6px;
 }
-.post-item__rating {
+.post-item__rating a {
+  padding: 16px 0;
   font-family: "Poppins";
   font-size: 14px;
   text-transform: uppercase;
@@ -282,9 +302,6 @@ main {
 }
 
 .post-item__title {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 24px;
   margin-top: 16px;
   transition: 0.3s opacity;
   cursor: pointer;
@@ -298,6 +315,10 @@ main {
 .post-item__title a {
   text-decoration: none;
   color: inherit;
+  padding: 15px 0;
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 500;
 }
 
 .post-item__description {
@@ -314,9 +335,17 @@ footer {
   text-align: center;
 }
 footer p {
+  font-size: 16px;
   margin: 0 auto;
+  padding: 20px;
   display: inline-block;
   color: var(--secondary-bg);
+}
+footer a {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 20px;
+  display: inline-block;
 }
 
 footer .social {
