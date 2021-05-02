@@ -11,7 +11,7 @@ const sayHello = (language) => {
     case japan:
       return "Konnichiwa! Ogenkidesuka?";
     default:
-      return "Hello!";
+      return "Hello! ";
   }
 };
 console.log(sayHello(indonesia));
