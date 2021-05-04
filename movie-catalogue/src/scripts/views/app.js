@@ -1,5 +1,8 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable linebreak-style */
+// eslint-disable-next-line quotes
+import DrawerInitiator from "../utils/drawer-initiator";
+
 class App {
   constructor({ button, drawer, content }) {
     this._button = button;
@@ -8,9 +11,13 @@ class App {
 
     this._initialAppShell();
   }
+
   _initialAppShell() {
-    // TODO: initial Drawer
-    // kita bisa menginisiasikan komponen lain bila ada
+    DrawerInitiator.init({
+      button: this._button,
+      drawer: this._drawer,
+      content: this._content,
+    });
   }
 }
 
