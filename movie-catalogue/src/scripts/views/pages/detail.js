@@ -10,10 +10,10 @@ const Detail = {
   },
 
   async afterRender() {
-    const url = UrlParser.parseActiveUrlWithCombiner();
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
     const movie = await TheMovieDbSource.detailMovie(url.id);
-    const moviesContainer = document.querySelector('#movie');
-    moviesContainer.innerHTML = createMovieDetailTemplate(movie);
+    const movieContainer = document.querySelector('#movie');
+    movieContainer.innerHTML = createMovieDetailTemplate(movie);
   },
 };
 
