@@ -1,11 +1,13 @@
-/* eslint-disable linebreak-style */
 const NowPlaying = {
   async render() {
     return `
-    <h2>Now Playing</h2>
+      <h2>Now Playing Page</h2>
     `;
   },
-  async afterRender() {},
+
+  async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
+  },
 };
 
 export default NowPlaying;

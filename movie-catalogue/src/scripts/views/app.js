@@ -1,5 +1,4 @@
-// eslint-disable-next-line quotes
-import DrawerInitiator from "../utils/drawer-initiator";
+import DrawerInitiator from '../utils/drawer-initiator';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
@@ -18,6 +17,8 @@ class App {
       drawer: this._drawer,
       content: this._content,
     });
+
+    // kita bisa menginisiasikan komponen lain bila ada
   }
 
   async renderPage() {

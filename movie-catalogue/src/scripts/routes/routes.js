@@ -1,34 +1,12 @@
-/* eslint-disable import/no-useless-path-segments */
-/* eslint-disable import/no-self-import */
-import DrawerInitiator from '../utils/drawer-initiator';
-import UrlParser from '../routes/url-parser';
-import routes from '../routes/routes';
+import NowPlaying from '../views/pages/now-playing';
+import Upcoming from '../views/pages/upcoming';
+import Detail from '../views/pages/detail';
 
-class App {
-  constructor({ button, drawer, content }) {
-    this._button = button;
-    this._drawer = drawer;
-    this._content = content;
+const routes = {
+  '/': NowPlaying, // default page
+  '/now-playing': NowPlaying,
+  '/upcoming': Upcoming,
+  '/detail/:id': Detail,
+};
 
-    this._initialAppShell();
-  }
-
-  _initialAppShell() {
-    DrawerInitiator.init({
-      button: this._button,
-      drawer: this._drawer,
-      content: this._content,
-    });
-
-    // kita bisa menginisiasikan komponen lain bila ada
-  }
-
-  async renderPage() {
-    const url = UrlParser.parseActiveUrlWithCombiner();
-    const page = routes[url];
-    this._content.innerHTML = await page.render();
-    await page.afterRender();
-  }
-}
-
-export default App;
+export default routes;
