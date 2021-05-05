@@ -1,5 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import TheMovieDbSource from '../../data/themoviedb-source';
+import
 
 const Detail = {
   async render() {

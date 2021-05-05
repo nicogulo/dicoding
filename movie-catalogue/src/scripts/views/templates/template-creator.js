@@ -18,7 +18,7 @@ const createMovieDetailTemplate = (movie) => `
   </div>
   `;
 
-const createMovieIemTemplate = (movie) => `
+const createMovieItemTemplate = (movie) => `
   <div class="movie-item">
     <div class="movie-item__header">
       <img src="${movie.backdrop_path ? CONFIG.BASE_IMAGE_URL + movie.backdrop_path : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${movie.title}" class="movie-item__header__poster">
@@ -33,4 +33,4 @@ const createMovieIemTemplate = (movie) => `
   </div>
 `;
 
-export { createMovieDetailTemplate, createMovieIemTemplate };
+export { createMovieItemTemplate, createMovieDetailTemplate };
