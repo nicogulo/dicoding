@@ -3,7 +3,11 @@ import TheMovieDbSource from '../../data/themoviedb-source';
 const Upcoming = {
   async render() {
     return `
-      <h2>Upcoming page</h2>
+     
+      <div class="content">
+        <h2 class="content__heading">Upcoming in Cinemas</h2>
+        <div id="movies" class="movies"></div>
+      </div>
     `;
   },
 
