@@ -13,6 +13,6 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   console.log(e.request);
 
-  e.responWith(fetch(e.request));
+  e.respondWith(fetch(e.request));
   // TODOL add/get fetch req to/from caches
 });
