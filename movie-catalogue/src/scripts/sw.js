@@ -1,18 +1,16 @@
-self.addEventListener('install', (e) => {
-  console.log('installing Service Worker..');
+import 'regenerator-runtime';
+import CacheHelper from './utils/cache-helper';
 
-  // TODOL Chaching app shell resource
+const { assets } = global.serviceWorkerOption;
+
+self.addEventListener('install', (event) => {
+  event.waitUntil(CacheHelper.cachingAppShell([...assets, './']));
 });
 
-self.addEventListener('activate', (e) => {
-  console.log('activating Service Worker');
-
-  // TODOL Delete old caches
+self.addEventListener('activate', (event) => {
+  event.waitUntil(CacheHelper.deleteOldCache());
 });
 
-self.addEventListener('fetch', (e) => {
-  console.log(e.request);
-
-  e.respondWith(fetch(e.request));
-  // TODOL add/get fetch req to/from caches
+self.addEventListener('fetch', (event) => {
+  event.respondWith(CacheHelper.revalidateCache(event.request));
 });
