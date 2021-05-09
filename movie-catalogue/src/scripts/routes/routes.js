@@ -8,7 +8,7 @@ const routes = {
   '/now-playing': NowPlaying,
   '/upcoming': Upcoming,
   '/detail/:id': Detail,
-  '/like': like,
+  '/like': Like,
 };
 
 export default routes;
