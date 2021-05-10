@@ -1,7 +1,7 @@
 {
-  "name": "Movie Catalogue Lite",
-  "short_name": "Movie Lite",
-  "description": "Free Catalogue Movie for you",
+  "name": "Inshokuten",
+  "short_name": "Inshokuten",
+  "description": "Restaurant in japan",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",

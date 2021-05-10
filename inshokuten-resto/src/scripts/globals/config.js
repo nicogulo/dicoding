@@ -1,7 +1,7 @@
 const CONFIG = {
-  KEY: '525478a2cddf94715e958a782a216ed8',
-  BASE_URL: 'https://api.themoviedb.org/3/',
-  BASE_IMAGE_URL: 'https://image.tmdb.org/t/p/w500/',
+  KEY: '12345',
+  BASE_URL: 'https://restaurant-api.dicoding.dev',
+  BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
   DEFAULT_LANGUAGE: 'en-us',
   CACHE_NAME: new Date().toISOString(),
   DATABASE_NAME: 'movie-catalogue-database',
