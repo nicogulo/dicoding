@@ -6,8 +6,7 @@ const Home = {
     return `
       <div class="content">
         <h2 class="content__heading">Inshokuten in Indonesia</h2>
-        <div id="movies" class="movies">
- 
+        <div id="restos" class="restos">
         </div>
       </div>
     `;
@@ -15,7 +14,7 @@ const Home = {
 
   async afterRender() {
     const restos = await TheRestoDbSource.homeList();
-    const restosContainer = document.querySelector('#movies');
+    const restosContainer = document.querySelector('#restos');
     restos.forEach((resto) => {
       restosContainer.innerHTML += createRestoItemTemplate(resto);
     });

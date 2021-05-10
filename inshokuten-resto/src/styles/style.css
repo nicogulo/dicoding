@@ -95,10 +95,10 @@ main {
 }
 
 /*
-  Movies
+  restos
 */
 
-.movies {
+.restos {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -106,25 +106,25 @@ main {
 }
 
 /*
-  Movie Item
+  resto Item
 */
 
-.movie-item {
+.resto-item {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
 }
 
-.movie-item__header {
+.resto-item__header {
   position: relative;
 }
 
-.movie-item .movie-item__header .movie-item__header__poster {
+.resto-item .resto-item__header .resto-item__header__poster {
   width: 100%;
 }
 
-.movie-item .movie-item__header .movie-item__header__rating {
+.resto-item .resto-item__header .resto-item__header__rating {
   position: absolute;
   padding: 8px;
   bottom: 20px;
@@ -134,27 +134,27 @@ main {
   color: white;
 }
 
-.movie-item
-  .movie-item__header
-  .movie-item__header__rating
-  .movie-item__header__rating__score {
+.resto-item
+  .resto-item__header
+  .resto-item__header__rating
+  .resto-item__header__rating__score {
   margin-left: 10px;
 }
 
-.movie-item .movie-item__content {
+.resto-item .resto-item__content {
   padding: 16px;
 }
 
-.movie-item .movie-item__content h3 {
+.resto-item .resto-item__content h3 {
   margin: 0 0 10px 0;
 }
 
-.movie-item .movie-item__content h3 a {
+.resto-item .resto-item__content h3 a {
   color: #db0000;
   text-decoration: none;
 }
 
-.movie-item .movie-item__content p {
+.resto-item .resto-item__content p {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -163,10 +163,10 @@ main {
 }
 
 /*
-  Movie
+  resto
 */
 
-.movie {
+.resto {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
@@ -175,12 +175,12 @@ main {
   gap: 18px 16px;
 }
 
-.movie .movie__poster {
+.resto .resto__poster {
   width: 100%;
   max-width: 400px;
 }
 
-.movie .movie__info h4 {
+.resto .resto__info h4 {
   margin: 8px 0;
 }
 

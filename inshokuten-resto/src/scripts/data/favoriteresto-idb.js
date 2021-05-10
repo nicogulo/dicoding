@@ -9,19 +9,19 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   },
 });
 
-const FavoriteMovieIdb = {
-  async getMovie(id) {
+const FavoriteRestoIdb = {
+  async getResto(id) {
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
-  async getAllMovies() {
+  async getAllRestos() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
-  async putMovie(movie) {
-    return (await dbPromise).put(OBJECT_STORE_NAME, movie);
+  async putResto(resto) {
+    return (await dbPromise).put(OBJECT_STORE_NAME, resto);
   },
-  async deleteMovie(id) {
+  async deleteresto(id) {
     return (await dbPromise).delete(OBJECT_STORE_NAME, id);
   },
 };
 
-export default FavoriteMovieIdb;
+export default FavoriteRestoIdb;

@@ -1,4 +1,4 @@
-import FavoriteMovieIdb from '../../data/favoritemovie-idb';
+import FavoriteRestoIdb from '../../data/favoriteresto-idb';
 import { createRestoItemTemplate } from '../templates/template-creator';
 
 const Favorite = {
@@ -14,7 +14,7 @@ const Favorite = {
   },
 
   async afterRender() {
-    const movies = await FavoriteMovieIdb.getAllMovies();
+    const movies = await FavoriteRestoIdb.getAllResto();
     const moviesContainer = document.querySelector('#movies');
     movies.forEach((movie) => {
       moviesContainer.innerHTML += createRestoItemTemplate(movie);
