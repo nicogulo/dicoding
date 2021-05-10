@@ -16,30 +16,30 @@ const createRestoDetailTemplate = (restaurant) => `
   </div>
 `;
 
-const createRestoItemTemplate = (restaurants) => `
+const createRestoItemTemplate = (restaurant) => `
   <div class="resto-item">
     <div class="resto-item__header">
-        <img class="resto-item__header__poster" alt="${restaurants.name}"
-            src="${restaurants.pictureId ? CONFIG.BASE_IMAGE_URL + restaurants.pictureId : 'https://restaurant-api.dicoding.dev/images/medium/12'}">
+        <img class="resto-item__header__poster" alt="${restaurant.name}"
+            src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId : 'https://restaurant-api.dicoding.dev/images/medium/12'}">
         <div class="resto-item__header__rating">
-            <p>⭐️<span class="resto-item__header__rating__score">${restaurants.rating}</span></p>
+            <p>⭐️<span class="resto-item__header__rating__score">${restaurant.rating}</span></p>
         </div>
     </div>
     <div class="resto-item__content">
-        <h3><a href="${`/#/detail/${restaurants.id}`}">${restaurants.name}</a></h3>
-        <p>${restaurants.description}</p>
+        <h3><a href="${`/#/detail/${restaurant.id}`}">${restaurant.name}</a></h3>
+        <p>${restaurant.description}</p>
     </div>
   </div>
   `;
 
 const createLikeButtonTemplate = () => `
-  <button aria-label="like this resto" id="likeButton" class="like">
+  <button aria-label="like this movie" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this resto" id="likeButton" class="like">
+  <button aria-label="unlike this movie" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;

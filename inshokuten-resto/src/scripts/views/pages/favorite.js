@@ -6,7 +6,7 @@ const Favorite = {
     return `
       <div class="content">
         <h2 class="content__heading">Your Liked Inshokuten</h2>
-        <div id="restaurants" class="restos">
+        <div id="restos" class="restos">
  
         </div>
       </div>
@@ -14,10 +14,10 @@ const Favorite = {
   },
 
   async afterRender() {
-    const restaurants = await FavoriteRestoIdb.getAllRestos();
-    const restaurantsContainer = document.querySelector('#restaurants');
-    restaurants.forEach((restaurant) => {
-      restaurantsContainer.innerHTML += createRestoItemTemplate(restaurant);
+    const restos = await FavoriteRestoIdb.getAllRestos();
+    const restosContainer = document.querySelector('#restos');
+    restos.forEach((resto) => {
+      restosContainer.innerHTML += createRestoItemTemplate(resto);
     });
   },
 };

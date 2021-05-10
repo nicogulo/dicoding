@@ -12,12 +12,12 @@ const WebSocketInitiator = {
 
   // callback event onmessage untuk menampilkan data
   _onMessageHandler(message) {
-    const movie = JSON.parse(message.data);
+    const restaurants = JSON.parse(message.data);
     NotificationHelper.sendNotification({
-      title: `${movie.title} is on cinema!`,
+      title: `${restaurants.name} is on cinema!`,
       options: {
-        body: movie.overview,
-        image: `${CONFIG.BASE_IMAGE_URL + movie.poster_path}`,
+        body: restaurants.overview,
+        image: `${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}`,
       },
     });
   },

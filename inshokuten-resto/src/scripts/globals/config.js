@@ -5,9 +5,9 @@ const CONFIG = {
   BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
   DEFAULT_LANGUAGE: 'en-us',
   CACHE_NAME: new Date().toISOString(),
-  DATABASE_NAME: 'movie-catalogue-database',
+  DATABASE_NAME: 'inshokuten-resto-database',
   DATABASE_VERSION: 1,
-  OBJECT_STORE_NAME: 'movies',
+  OBJECT_STORE_NAME: 'restaurants',
   WEB_SOCKET_SERVER: 'wss://stormy-badlands-06326.herokuapp.com',
 };
 
