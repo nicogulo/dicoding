@@ -13,18 +13,18 @@ const Detail = {
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const resto = await TheRestoDbSource.detailResto(url.id);
+    const restaurant = await TheRestoDbSource.detailResto(url.id);
     const restoContainer = document.querySelector('#resto');
-    restoContainer.innerHTML = createRestoDetailTemplate(resto);
+    restoContainer.innerHTML = createRestoDetailTemplate(restaurant);
 
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      resto: {
-        id: resto.id,
-        name: resto.name,
-        description: resto.description,
-        pictureId: resto.pictureId,
-        rating: resto.rating,
+      restaurant: {
+        id: url.id,
+        name: restaurant.name,
+        description: restaurant.description,
+        pictureId: restaurant.pictureId,
+        rating: restaurant.rating,
       },
     });
   },

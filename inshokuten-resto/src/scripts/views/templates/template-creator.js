@@ -26,7 +26,7 @@ const createRestoItemTemplate = (restaurants) => `
         </div>
     </div>
     <div class="resto-item__content">
-        <h3><a href="${`/#/list/${restaurants.id}`}">${restaurants.name}</a></h3>
+        <h3><a href="${`/#/detail/${restaurants.id}`}">${restaurants.name}</a></h3>
         <p>${restaurants.description}</p>
     </div>
   </div>

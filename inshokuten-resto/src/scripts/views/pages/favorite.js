@@ -5,8 +5,8 @@ const Favorite = {
   async render() {
     return `
       <div class="content">
-        <h2 class="content__heading">Your Liked Movie</h2>
-        <div id="movies" class="movies">
+        <h2 class="content__heading">Your Liked Inshokuten</h2>
+        <div id="restaurants" class="restos">
  
         </div>
       </div>
@@ -14,10 +14,10 @@ const Favorite = {
   },
 
   async afterRender() {
-    const movies = await FavoriteRestoIdb.getAllResto();
-    const moviesContainer = document.querySelector('#movies');
-    movies.forEach((movie) => {
-      moviesContainer.innerHTML += createRestoItemTemplate(movie);
+    const restaurants = await FavoriteRestoIdb.getAllRestos();
+    const restaurantsContainer = document.querySelector('#restaurants');
+    restaurants.forEach((restaurant) => {
+      restaurantsContainer.innerHTML += createRestoItemTemplate(restaurant);
     });
   },
 };
