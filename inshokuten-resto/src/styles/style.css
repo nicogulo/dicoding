@@ -1,3 +1,11 @@
+:root {
+  --primary-bg: #fa4a0c;
+  --secondary-bg: #ffffff;
+  --third-bg: #fcecdd;
+  --font-pm: #929292;
+  --font-title: #666666;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -46,7 +54,7 @@ body {
 }
 
 .app-bar .app-bar__brand h1 {
-  color: #db0000;
+  color: var(--primary-bg);
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
@@ -150,7 +158,7 @@ main {
 }
 
 .resto-item .resto-item__content h3 a {
-  color: #db0000;
+  color: var(--primary-bg);
   text-decoration: none;
 }
 
@@ -174,14 +182,24 @@ main {
   grid-template-columns: 1fr;
   gap: 18px 16px;
 }
-
+.resto .resto__title {
+  color: var(--primary-bg);
+}
 .resto .resto__poster {
   width: 100%;
   max-width: 400px;
+  border-radius: 20px;
 }
 
 .resto .resto__info h4 {
-  margin: 8px 0;
+  margin: 10px 0;
+  color: var(--primary-bg);
+}
+
+.resto .resto__overview h4,
+h3 {
+  margin-top: 10px;
+  color: var(--primary-bg);
 }
 
 /*
@@ -202,6 +220,90 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Review */
+
+.review-container {
+  width: 80%;
+  background: var(--primary-bg);
+  color: #fff;
+  margin: 2rem;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+h2 {
+  margin-bottom: 3rem;
+}
+.cards {
+  margin-top: 2.5rem;
+}
+.cards .card {
+  width: 100%;
+  margin-bottom: 0.7rem;
+  background: var(--third-bg);
+  border-radius: 5px;
+}
+.card > * {
+  padding: 1rem 1.2rem;
+}
+.card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  background: purple;
+  border-radius: 50%;
+  outline: none;
+}
+.name .one {
+  background: orange;
+}
+.name,
+.name .img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--font-title);
+}
+.name .img {
+  justify-content: center;
+}
+.card-content {
+  margin: 0;
+  padding-top: 0;
+}
+.card-content p {
+  font-size: 0.8rem;
+  color: rgb(152, 152, 165);
+}
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-action span {
+  font-size: 0.8rem;
+  color: RGB(101, 101, 114);
+}
+.card-action .btn {
+  padding: 0.3rem 0.7rem;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 2px;
+  color: #8c8c9f;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  background: #000;
+  color: #fff;
 }
 
 /*
