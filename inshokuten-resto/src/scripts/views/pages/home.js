@@ -5,7 +5,6 @@ const Home = {
   async render() {
     return `
       <div class="content">
-        <h2 class="content__heading">Inshokuten in Indonesia</h2>
         <div id="restos" class="restos">
         </div>
       </div>

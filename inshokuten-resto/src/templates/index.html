@@ -8,6 +8,12 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="favicon.png" />
     <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
@@ -15,6 +21,7 @@
     <title>Inshoku-ten</title>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <header class="app-bar">
       <div class="app-bar__menu">
         <button id="hamburgerButton">☰</button>
@@ -30,18 +37,75 @@
         </ul>
       </nav>
     </header>
-    <main id="mainContent">
-      <footer>
-        <p>
-          All data obtained from
+    <!-- Hero Jumbotron -->
+    <div class="hero" role="img" aria-label="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Why stay hungry when</h1>
+        <p class="hero__tagline">you can search in Inshokuten</p>
+        <a href="#explore">
+          <button class="explore">
+            Explore<span class="icon-right"></span
+            ><span class="icon-right after"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <section class="content">
+      <div class="restaurants">
+        <h1 class="restaurants-label" id="explore">Explore Restaurants</h1>
+        <div id="posts" class="posts"></div>
+      </div>
+    </section>
+    <main id="mainContent"></main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved made by
+            <a href="https://instagram.com/_nanithefvck" target="_blank"
+              >Inshoku-ten | Nico Gulo</a
+            >
+          </p>
+        </div>
+
+        <div class="social">
           <a
-            href="https://restaurant-api.dicoding.dev/"
-            target="_blank"
-            rel="noreferrer"
-            >Dicoding Resto</a
-          >
-        </p>
-      </footer>
-    </main>
+            href="https://facebook.com/comunity.abdn"
+            class="social-item"
+            target="blank"
+            ><span class="fab fa-facebook"></span
+          ></a>
+          <a
+            href="https://twitter.com/_xnfvk"
+            class="social-item"
+            target="blank"
+            ><span class="fab fa-twitter"></span
+          ></a>
+          <a
+            href="https://instagram.com/_nanithefvck"
+            class="social-item"
+            target="blank"
+            ><span class="fab fa-instagram"></span
+          ></a>
+          <a
+            href="https://linkedin.com/in/nicogulo"
+            class="social-item"
+            target="blank"
+            ><span class="fab fa-linkedin"></span
+          ></a>
+          <a
+            href="https://github.com/nicogulo"
+            class="social-item"
+            target="blank"
+            ><span class="fab fa-github"></span
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
