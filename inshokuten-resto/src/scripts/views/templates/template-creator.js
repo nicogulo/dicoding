@@ -25,7 +25,7 @@ const createRestoDetailTemplate = (restaurant) => `
                     <li>${drink.name}</li>`).join('')}
       </p>
  
-    <h3>Description</h3>
+    <h4>Description</h4>
     <p>${restaurant.restaurant.description}</p>
     <p>${restaurant.restaurant.customerReviews
     .map(

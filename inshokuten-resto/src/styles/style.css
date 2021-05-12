@@ -196,8 +196,7 @@ main {
   color: var(--primary-bg);
 }
 
-.resto .resto__overview h4,
-h3 {
+.resto .resto__overview h4 {
   margin-top: 10px;
   color: var(--primary-bg);
 }
@@ -225,10 +224,10 @@ h3 {
 /* Review */
 
 .review-container {
-  width: 80%;
+  width: 90%;
   background: var(--primary-bg);
   color: #fff;
-  margin: 2rem;
+  margin: 2rem auto;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
   padding: 2.5rem;
   border-radius: 10px;

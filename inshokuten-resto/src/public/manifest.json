@@ -1,11 +1,11 @@
 {
-  "name": "Inshokuten",
+  "name": "Inshoku-ten",
   "short_name": "Inshokuten",
   "description": "Restaurant in japan",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#d84315",
+  "background_color": "#fa4a0c",
+  "theme_color": "#fa4a0c",
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
