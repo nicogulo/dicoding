@@ -20,6 +20,4 @@ window.addEventListener('load', () => {
   app.renderPage();
   // SW
   swRegister();
-  // websocket
-  WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });

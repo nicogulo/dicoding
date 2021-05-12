@@ -26,7 +26,7 @@ body {
   position: absolute;
   top: -40px;
   left: 0;
-  background-color: #bf1722;
+  background-color: var(--primary-bg);
   color: white;
   padding: 8px;
   z-index: 100;
@@ -66,7 +66,7 @@ body {
 }
 
 /* Button */
-button {
+.btnexp {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   background: none;
@@ -82,7 +82,7 @@ button {
   transition: 0.01s 0.23s ease-out all;
   overflow: hidden;
 }
-button:before {
+.btnexp:before {
   content: "";
   position: absolute;
   left: 0;
@@ -93,7 +93,7 @@ button:before {
   z-index: -1;
   transition: 0.3s ease-in all;
 }
-button:after {
+.btnexp:after {
   content: "";
   position: absolute;
   left: -5%;
@@ -104,24 +104,24 @@ button:after {
   z-index: -1;
   transition: 0.4s 0.02s ease-in all;
 }
-button:hover {
+.btnexp:hover {
   cursor: pointer;
   color: transparent;
 }
-button:hover:before {
+.btnexp:hover:before {
   left: 100%;
   width: 25%;
 }
-button:hover:after {
+.btnexp:hover:after {
   left: 100%;
   width: 70%;
 }
-button:hover .icon-right.after:after {
+.btnexp:hover .icon-right.after:after {
   left: -80px;
   color: white;
   transition: 0.2s 0.2s ease all;
 }
-button:hover .icon-right.after:before {
+.btnexp:hover .icon-right.after:before {
   left: -104px;
   top: 14px;
   opacity: 1;
@@ -367,7 +367,7 @@ main {
   position: fixed;
   bottom: 16px;
   right: 16px;
-  background-color: #db0000;
+  background-color: var(--primary-bg);
   color: white;
   border: 0;
   border-radius: 50%;
