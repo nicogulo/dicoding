@@ -1,5 +1,3 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable indent */
 import CONFIG from '../../globals/config';
 
 // Detail Content

@@ -7,7 +7,6 @@ const Favorite = {
       <div class="content">
         <h2 class="content__heading">Your Liked Inshokuten</h2>
         <div id="restos" class="restos">
- 
         </div>
       </div>
     `;
