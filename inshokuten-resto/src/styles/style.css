@@ -180,8 +180,8 @@ body {
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
-  font-size: 18px;
-  padding: 8px;
+  font-size: 24px;
+  padding: 12px;
   cursor: pointer;
 }
 
@@ -203,7 +203,7 @@ body {
   left: -180px;
   width: 150px;
   transition: all 0.3s;
-  padding: 8px;
+  padding: 10px;
   background-color: white;
   overflow: hidden;
 }
@@ -216,7 +216,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: black;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 5px;
   width: 100%;
 }

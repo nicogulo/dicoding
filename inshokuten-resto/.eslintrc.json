@@ -16,6 +16,7 @@
     "linebreak-style": "off",
     "operator-linebreak": "off",
     "no-self-import": "off",
-    "no-restricted-globals": "off"
+    "no-restricted-globals": "off",
+    "no-extra-semi": 0
   }
 }
