@@ -1,4 +1,6 @@
-import CONFIG from "../../globals/config";
+/* eslint-disable comma-dangle */
+/* eslint-disable indent */
+import CONFIG from '../../globals/config';
 
 // Detail Content
 const createRestoDetailTemplate = (restaurant) => `
@@ -13,7 +15,7 @@ const createRestoDetailTemplate = (restaurant) => `
       <h4>Categories</h4>
       <p>${restaurant.restaurant.categories
         .map((category) => category.name)
-        .join(" - ")}</p>
+        .join(' - ')}</p>
           
       <h4>Rating</h4>
       <p>${restaurant.restaurant.rating}</p>
@@ -26,7 +28,7 @@ const createRestoDetailTemplate = (restaurant) => `
           (food) => `
                   <li>${food.name}</li>`
         )
-        .join("")}
+        .join('')}
       </p>
 
     <h4>Drinks Menu</h4>
@@ -35,7 +37,7 @@ const createRestoDetailTemplate = (restaurant) => `
           (drink) => `
                     <li>${drink.name}</li>`
         )
-        .join("")}
+        .join('')}
       </p>
  
     <h4>Description</h4>
@@ -67,7 +69,7 @@ const createRestoDetailTemplate = (restaurant) => `
     </div>
               `
       )
-      .join("")}
+      .join('')}
       </p>
 
   </div>
@@ -81,7 +83,7 @@ const createRestoItemTemplate = (restaurant) => `
             src="${
               restaurant.pictureId
                 ? `${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}`
-                : "https://restaurant-api.dicoding.dev/images/medium/12"
+                : 'https://restaurant-api.dicoding.dev/images/medium/12'
             }">
         <div class="resto-item__header__rating">
             <p>⭐️<span class="resto-item__header__rating__score">${
