@@ -316,6 +316,7 @@ main {
 }
 
 .resto-item .resto-item__content h3 a {
+  padding: 16px 0;
   color: var(--primary-bg);
   text-decoration: none;
 }
