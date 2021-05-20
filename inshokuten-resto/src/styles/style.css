@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -42,7 +42,7 @@ body {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: url("../public/images/heros/hero3.jpg");
+  background-image: url('../public/images/heros/hero3.jpg');
   background-position: center;
   background-color: var(--primary-bg);
 }
@@ -67,7 +67,7 @@ body {
 
 /* Button */
 .btnexp {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   background: none;
   color: white;
@@ -83,7 +83,7 @@ body {
   overflow: hidden;
 }
 .btnexp:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -94,7 +94,7 @@ body {
   transition: 0.3s ease-in all;
 }
 .btnexp:after {
-  content: "";
+  content: '';
   position: absolute;
   left: -5%;
   top: 5%;
@@ -134,8 +134,8 @@ body {
   right: 0;
 }
 .icon-right:after {
-  font-family: "FontAwesome";
-  content: "→";
+  font-family: 'FontAwesome';
+  content: '→';
   font-size: 24px;
   display: inline-block;
   position: relative;
@@ -148,7 +148,7 @@ body {
   transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color;
 }
 .icon-right.after:before {
-  content: "Explore";
+  content: 'Explore';
   position: absolute;
   left: -230px;
   top: 14px;
@@ -241,7 +241,7 @@ main {
   text-align: center;
 }
 .restaurants-label {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 32px;
   font-weight: lighter;
 
@@ -249,7 +249,7 @@ main {
 }
 
 .restaurants-label::after {
-  content: "";
+  content: '';
   margin-top: 16px;
   padding-bottom: 32px;
   display: block;
@@ -487,10 +487,8 @@ footer a {
 .social-item {
   display: inline-block;
   width: 60px;
-  height: 60px;
   position: relative;
   border-radius: 50%;
   font-size: 22px;
-  margin: 0 10px;
   color: var(--secondary-bg);
 }

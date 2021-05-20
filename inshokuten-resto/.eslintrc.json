@@ -17,7 +17,7 @@
     "operator-linebreak": "off",
     "no-self-import": "off",
     "no-restricted-globals": "off",
-    "no-extra-semi": 0,
+    "no-extra-semi": 1,
     "comma-dangle": "off",
     "indent": "off"
   }
