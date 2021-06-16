@@ -1,4 +1,4 @@
-import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
+import * as TestFactories from './helpers/testFactories';
 import FavoriteRestoIdb from '../src/scripts/data/favoriteresto-idb';
 
 describe('Liking A restaurant', () => {
@@ -12,12 +12,7 @@ describe('Liking A restaurant', () => {
 
   it('should show the like button when the restaurant has not been liked before', async () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="like this restaurant"]')
@@ -25,12 +20,7 @@ describe('Liking A restaurant', () => {
   });
 
   it('should not show the unlike button when the restaurant has not been liked before', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="unlike this restaurant"]')
@@ -38,12 +28,7 @@ describe('Liking A restaurant', () => {
   });
 
   it('should be able to like the restaurant', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
     const restaurant = await FavoriteRestoIdb.getResto(1);
@@ -54,12 +39,7 @@ describe('Liking A restaurant', () => {
   });
 
   it('should not add a restaurant again when its already liked', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     // Tambahkan resto dengan ID 1 ke daftar resto yang disukai
     await FavoriteRestoIdb.putResto({ id: 1 });
@@ -72,11 +52,8 @@ describe('Liking A restaurant', () => {
   });
 
   // menggunakan metode xit, bukan it
-  xit('should not add a restaurant when it has no id', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {},
-    });
+  it('should not add a restaurant when it has no id', async () => {
+    await TestFactories.createLikeButtonPresenterWithRestaurant({});
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
 

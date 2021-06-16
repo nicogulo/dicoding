@@ -1,11 +1,11 @@
 import FavoriteRestoIdb from '../data/favoriteresto-idb';
 import {
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createLikeRestaurantButtonTemplate,
+  createUnlikeRestaurantButtonTemplate,
 } from '../views/templates/template-creator';
 
 // method init
-const LikeButtonInitiator = {
+const LikeButtonPresenter = {
   // container untuk menampung tombol like diltekan dan objek restaurant yang hendak dimasukan
   async init({ likeButtonContainer, restaurant }) {
     this._likeButtonContainer = likeButtonContainer;
@@ -32,7 +32,7 @@ const LikeButtonInitiator = {
 
   // method untuk tombol like restaurant yang belum di like
   _renderLike() {
-    this._likeButtonContainer.innerHTML = createLikeButtonTemplate();
+    this._likeButtonContainer.innerHTML = createLikeRestaurantButtonTemplate();
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
@@ -43,7 +43,8 @@ const LikeButtonInitiator = {
 
   // method untuk tombol like restaurant yang sudah di like
   _renderLiked() {
-    this._likeButtonContainer.innerHTML = createLikedButtonTemplate();
+    this._likeButtonContainer.innerHTML =
+      createUnlikeRestaurantButtonTemplate();
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
@@ -53,4 +54,4 @@ const LikeButtonInitiator = {
   },
 };
 
-export default LikeButtonInitiator;
+export default LikeButtonPresenter;

@@ -1,4 +1,4 @@
-import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
+import * as TestFactories from './helpers/testFactories';
 import FavoriteRestoIdb from '../src/scripts/data/favoriteresto-idb';
 
 const addLikeButtonContainer = () => {
@@ -16,12 +16,7 @@ describe('Unliking A restaurant', () => {
   });
 
   it('should display unlike widget when the restaurant has been liked', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="unlike this restaurant"]')
@@ -29,12 +24,7 @@ describe('Unliking A restaurant', () => {
   });
 
   it('should not display like widget when the restaurant has been liked', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="like this restaurant"]')
@@ -42,12 +32,7 @@ describe('Unliking A restaurant', () => {
   });
 
   it('should be able to remove liked restauant from the list', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     document
       .querySelector('[aria-label="unlike this restaurant"]')
@@ -57,12 +42,7 @@ describe('Unliking A restaurant', () => {
   });
 
   it('should not throw error if the unliked restaurant is not in the list', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     // hapus dulu restaurant dari daftar restaurant yang disukai
     await FavoriteRestoIdb.deleteResto(1);
