@@ -1,7 +1,7 @@
 import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
 import FavoriteRestoIdb from '../src/scripts/data/favoriteresto-idb';
 
-describe('Liking A Resto', () => {
+describe('Liking A restaurant', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
   };
@@ -20,11 +20,11 @@ describe('Liking A Resto', () => {
     });
 
     expect(
-      document.querySelector('[aria-label="like this movie"]')
+      document.querySelector('[aria-label="like this restaurant"]')
     ).toBeTruthy();
   });
 
-  it('should not show the unlike button when the Resto has not been liked before', async () => {
+  it('should not show the unlike button when the restaurant has not been liked before', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {
@@ -33,11 +33,11 @@ describe('Liking A Resto', () => {
     });
 
     expect(
-      document.querySelector('[aria-label="unlike this resto"]')
+      document.querySelector('[aria-label="unlike this restaurant"]')
     ).toBeFalsy();
   });
 
-  it('should be able to like the resto', async () => {
+  it('should be able to like the restaurant', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {
@@ -53,7 +53,7 @@ describe('Liking A Resto', () => {
     FavoriteRestoIdb.deleteResto(1);
   });
 
-  it('should not add a resto again when its already liked', async () => {
+  it('should not add a restaurant again when its already liked', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {
@@ -72,7 +72,7 @@ describe('Liking A Resto', () => {
   });
 
   // menggunakan metode xit, bukan it
-  xit('should not add a resto when it has no id', async () => {
+  xit('should not add a restaurant when it has no id', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {},

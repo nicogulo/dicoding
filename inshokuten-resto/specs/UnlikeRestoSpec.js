@@ -24,7 +24,7 @@ describe('Unliking A restaurant', () => {
     });
 
     expect(
-      document.querySelector('[aria-label="unlike this movie"]')
+      document.querySelector('[aria-label="unlike this restaurant"]')
     ).toBeTruthy();
   });
 
@@ -50,13 +50,13 @@ describe('Unliking A restaurant', () => {
     });
 
     document
-      .querySelector('[aria-label="unlike this movie"]')
+      .querySelector('[aria-label="unlike this restaurant"]')
       .dispatchEvent(new Event('click'));
 
     expect(await FavoriteRestoIdb.getAllRestos()).toEqual([]);
   });
 
-  it('should not throw error if the unliked movie is not in the list', async () => {
+  it('should not throw error if the unliked restaurant is not in the list', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restaurant: {
@@ -69,7 +69,7 @@ describe('Unliking A restaurant', () => {
 
     // kemudian, simulasikan pengguna menekan widget batal menyukai restaurant
     document
-      .querySelector('[aria-label="unlike this movie"]')
+      .querySelector('[aria-label="unlike this restaurant"]')
       .dispatchEvent(new Event('click'));
 
     expect(await FavoriteRestoIdb.getAllRestos()).toEqual([]);
